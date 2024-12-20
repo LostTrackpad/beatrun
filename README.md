@@ -1,18 +1,18 @@
+### **No longer maintained due to conflicts with the "community". I also won't give support for anyone trying to use this.**
+
+Goodbye Beatrun.
+
 # Beatrun
 
 ### **🚨 Important Notice**
 
 The **only** official source for this version of Beatrun is this repository. Any uploads made elsewhere are unsupported. You're on your own if you use them.
 
-Official support channels will mute you if you try and get support for those uploads.
-
 ## About
 
 A parkour gamemode for Garry's Mod. Used to be closed source and distributed with DLL files, now *source-available*.
 
 Want an open-source version? Go to [`JonnyBro/beatrun`](https://github.com/jonnybro/beatrun) instead.
-
-[Support is available here.](https://discord.gg/MkR4AhEvP7) Read the rules.
 
 > [!CAUTION]
 > **This gamemode has additional optional modules for functionality!** Modules are required for Discord Rich Presence and Steam Presence to work due to limitations.
@@ -71,3 +71,4 @@ Want an open-source version? Go to [`JonnyBro/beatrun`](https://github.com/jonny
 - [relaxtakenotes](https://github.com/relaxtakenotes) for making this project possible.
 - [Fluffy Servers](https://github.com/fluffy-servers/gmod-discord-rpc) for Discord Rich Presence module.
 - [YuRaNnNzZZ](https://github.com/YuRaNnNzZZ/gmcl_steamrichpresencer) for Steam Presence module.
+- beatrun.ru "community" for being hostile and making me abandon Beatrun altogether
