@@ -1,60 +1,31 @@
-# Beatrun | Community Edition
+# Beatrun
 
-[![Powered by Electricity](https://forthebadge.com/images/featured/featured-powered-by-electricity.svg)](https://forthebadge.com)
-[![Powered by Black Magic](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
+### **🚨 Important Notice**
 
-[**Join our Discord Community!**](https://discord.gg/93Psubbgsg)
+The **only** official source for this version of Beatrun is this repository. Any uploads made elsewhere are unsupported. You're on your own if you use them.
 
-> *[Русский | Russian](./README.ru.md)*
-
----
-
-## 🚨 Important Notice
-
-### Please read this README thoroughly before asking questions
-
-### The **only official source** for this fork is this GitHub repository. Workshop versions are outdated and unsupported
-
----
+Official support channels will mute you if you try and get support for those uploads.
 
 ## About
 
-Beatrun is an **infamous parkour addon for Garry's Mod**, now fully open-sourced and maintained by the community.
-It includes various improvements, new features, and enhanced functionality.
+A parkour gamemode for Garry's Mod. Used to be closed source and distributed with DLL files, now *source-available*.
 
-> [!WARNING]
-> **This repository contains no malicious modules.** However, optional modules such as Discord Rich Presence and Steam Presence are available for additional features.
-> These are **completely optional** and can be removed at any time.
+Want an open-source version? Go to [`JonnyBro/beatrun`](https://github.com/jonnybro/beatrun) instead.
+
+[Support is available here.](https://discord.gg/MkR4AhEvP7) Read the rules.
+
+> [!CAUTION]
+> **This gamemode has additional optional modules for functionality!** Modules are required for Discord Rich Presence and Steam Presence to work due to limitations.
 >
-> - Modules are located **[here](https://github.com/JonnyBro/beatrun/tree/main/lua/bin)**.
-> - Refer to the **[Credits](#credits)** section for their source code.
-
----
+> Removing them ***will not*** affect gameplay. They are located in `lua/bin`. If you're afraid if binary executables, don't install them.
 
 ## Installation
 
-### 🔧 Automatic Installation (Recommended for Windows 10/11)
-
-> [!NOTE]
-> Windows 7 and old versions of Windows 10 are not supported. Please update your OS.
-
-Run the following command in PowerShell (Run as Administrator if Steam and/or the game is installed on the system (C:) drive):
-
-```powershell
-irm https://beatrun.jonnybro.ru/install | iex
-```
-
-1. Start the game.
-2. Select the `Beatrun` gamemode in the bottom-right corner.
-
-### 🛠️ Manual Installation
-
-1. **[Download this repository](https://github.com/JonnyBro/beatrun/archive/refs/heads/master.zip).**
-2. Delete the `beatrun` folder in `your_game_folder/garrysmod/addons`, if it exists.
-3. Extract `beatrun-main/beatrun` into `your_game_folder/garrysmod/addons`.
-4. (Optional) For Discord and Steam Presence, extract `beatrun-main/lua` to `your_game_folder/garrysmod`.
-5. Start the game.
-6. Select the `Beatrun` gamemode in the bottom-right corner.
+1. **[Download this repository](https://github.com/LostTrackpad/beatrun/archive/refs/heads/master.zip).**
+2. Delete the `beatrun` folder in *(your game folder)*`/garrysmod/addons`, if it exists.
+3. Extract `beatrun-main/beatrun` into *(your game folder)*`/garrysmod/addons`.
+4. (Optional) For Discord and Steam Presence, extract `beatrun-main/lua` to *(your game folder)*`/garrysmod`.
+5. Start the game. Select the `Beatrun` gamemode in the bottom-right corner.
 
 ---
 
@@ -62,16 +33,16 @@ irm https://beatrun.jonnybro.ru/install | iex
 
 ### New Features
 
-- **Custom Courses Database** hosted by Jonny_Bro: **[Access Here](https://courses.jonnybro.ru)** (free and **[open source](https://git.jonnybro.ru/jonny_bro/beatrun-courses-server)**).
-- **New Gamemode:** Deathmatch.
-- "Proper" Kick Glitch similar to the **[original game](https://www.youtube.com/watch?v=zK5y3NBUStc)**.
-- In-game configuration menu in the Tools menu under **Beatrun**. All settings can be modified here.
-- Localization support in **7 languages**.
-- Enhanced Build Mode: spawn props from the Spawn Menu, and they will save in your course.
+- **Custom course database support.** Course database software is available **[here](https://git.jonnybro.ru/jonny_bro/beatrun-courses-server)**.
+- **New gamemode** Deathmatch.
+- Optional more accurate kickglitch implementation similar to *[Mirror's Edge](https://www.youtube.com/watch?v=zK5y3NBUStc)*.
+- In-game configuration menu in the Tools menu under *Beatrun*.
+- Localization support, available in **7 languages**.
+- Any prop can be spawned and will save in your course.
 - Various new abilities:
-  - **Roll after ziplines:** Press `+duck` (CTRL by default).
-  - **Dismount ladders:** Press `+duck` (CTRL by default).
-  - **Remove ziplines created with Zipline Gun:** Press `+attack2` (RMB by default).
+  - **Roll after ziplines:** Press `+duck` (*Control/CTRL* by default).
+  - **Dismount ladders:** Press `+duck` (*Control/CTRL* by default).
+  - **Remove ziplines created with Zipline Gun:** Press `+attack2` (*Right Mouse Button* by default).
   - **Next checkpoint arrow** for easier navigation.
 - New server and client configuration variables:
   - Server:
@@ -85,41 +56,18 @@ irm https://beatrun.jonnybro.ru/install | iex
     - `Beatrun_QuickturnHandsOnly`: Restrict QuickTurn to the Runner Hands weapon.
 - Other improvements:
   - Small camera punch effect when diving.
-  - SteamID no longer displayed on screen.
-
-### Fixes
-
-- Fixed playermodels showing as `ERROR` in first person.
-- Improved leaderboard sorting in gamemodes.
-- Fixed crashes and issues with Data Theft gamemode.
-- Enabled jumping while walking.
-- Grapples now follow moving entities and are visible to other players.
-
----
-
-## Animations
-
-The animations installer has been removed. You can now switch animations directly in the **Tools menu** under the Beatrun category.
-
----
-
-## Known Issues
-
-- See the full list of issues **[here](https://github.com/JonnyBro/beatrun/issues)**.
-
----
-
-## Related Projects
-
-- **[Beatrun Reanimated Project](https://github.com/JonnyBro/beatrun-anims)**
-
----
+  - Your Steam account ID is not displayed on screen anymore.
+  - Fixed playermodels showing as `ERROR` in first person.
+  - Improved leaderboard sorting in gamemodes.
+  - Fixed crashes and issues with Data Theft gamemode.
+  - Enabled jumping while walking.
+  - Grapples now follow moving entities and are visible to other players.
 
 ## Credits
 
-- **[All contributors](https://github.com/JonnyBro/beatrun/graphs/contributors)** ❤️
+- **[All contributors](https://github.com/JonnyBro/beatrun/graphs/contributors)**.
+- **[Beatrun Reanimated Project](https://github.com/JonnyBro/beatrun-anims), more specifically [MTB](https://www.youtube.com/@MTB396)** for optional animations included.
 - [EarthyKiller127/datae](https://www.youtube.com/channel/UCiFqPwGo4x0J65xafIaECDQ) - Original creator of Beatrun.
-- [relaxtakenotes](https://github.com/relaxtakenotes) - Made this project possible.
-- [MTB](https://www.youtube.com/@MTB396) - Beatrun Reanimated Project.
-- [Fluffy Servers](https://github.com/fluffy-servers/gmod-discord-rpc) - Discord Rich Presence.
-- [YuRaNnNzZZ](https://github.com/YuRaNnNzZZ/gmcl_steamrichpresencer) - Steam Presence (TFA Base creator).
+- [relaxtakenotes](https://github.com/relaxtakenotes) for making this project possible.
+- [Fluffy Servers](https://github.com/fluffy-servers/gmod-discord-rpc) for Discord Rich Presence module.
+- [YuRaNnNzZZ](https://github.com/YuRaNnNzZZ/gmcl_steamrichpresencer) for Steam Presence module.
